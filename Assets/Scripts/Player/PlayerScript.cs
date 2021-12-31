@@ -71,7 +71,7 @@ public class PlayerScript : MonoBehaviour
         {
             if (idle)
             {
-                timeIdle += 0.002f;
+                timeIdle += 0.005f;
                 if (timeIdle >= maxTimeIdle)
                 {
                     idle = false;
@@ -83,7 +83,7 @@ public class PlayerScript : MonoBehaviour
             }
             if (dance)
             {
-                timeDance += 0.002f;
+                timeDance += 0.005f;
                 if (timeDance >= maxTimeDance)
                 {
                     idle = true;
