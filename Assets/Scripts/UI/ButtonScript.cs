@@ -268,6 +268,7 @@ public class ButtonScript : MonoBehaviour
     {
         SaveData.Instance.ResetData();
         SoundTab();
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
     #endregion
 }
