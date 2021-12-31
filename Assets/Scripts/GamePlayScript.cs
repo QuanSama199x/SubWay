@@ -14,6 +14,10 @@ public class GamePlayScript : MonoBehaviour
 
     public void Awake()
     {
+#if UNITY_STANDALONE
+        Screen.SetResolution(480, 800, false);
+        Screen.fullScreen = false;
+#endif
         Application.targetFrameRate = frameRate;
         Instance = this;
 
@@ -24,6 +28,7 @@ public class GamePlayScript : MonoBehaviour
     public int level;
 
     // Start is called before the first frame update
+
     void Start()
     {
         timeSpawnItem = 0;
